@@ -185,7 +185,7 @@ body.index {
                             top: 9%;
                             left: 15.5%;
                             object-fit: cover;
-                            aspect-ratio: 2/3.32;
+                            aspect-ratio: 2/3.355;
                             width: 63.5%;
                             transform-style: preserve-3d;
                             mix-blend-mode: multiply;
@@ -304,7 +304,7 @@ body.edisi {
                             position: absolute;
                             top: 9%;
                             left: 15.2%;
-                            aspect-ratio: 2/3.32;
+                            aspect-ratio: 2/3.355;
                             width: 63.5%;
                             transform-style: preserve-3d;
                             mix-blend-mode: multiply;
@@ -631,8 +631,8 @@ body.page {
             gap: .3em;
             align-items: center;
             justify-content: center;
-            aspect-ratio: 3/4;
-            width: 20em;
+            aspect-ratio: 3/4.8;
+            width: 18em;
             padding: 2em;
             cursor: pointer;
             border-radius: .4em;
