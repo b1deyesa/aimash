@@ -186,6 +186,7 @@ body.index {
                             left: 15.5%;
                             object-fit: cover;
                             aspect-ratio: 2/3.355;
+                            clip-path: inset(0px 0px 3.5px 0px);
                             width: 63.5%;
                             transform-style: preserve-3d;
                             mix-blend-mode: multiply;
@@ -305,6 +306,7 @@ body.edisi {
                             top: 9%;
                             left: 15.2%;
                             aspect-ratio: 2/3.355;
+                            clip-path: inset(0px 0px 3.5px 0px);
                             width: 63.5%;
                             transform-style: preserve-3d;
                             mix-blend-mode: multiply;
