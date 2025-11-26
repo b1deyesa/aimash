@@ -828,6 +828,10 @@ body.page {
                     
                     .item__book {
                         font-size: .65em !important;
+                        
+                        .book__cover {
+                            clip-path: inset(0px 0px 1px 0px) !important;
+                        }
                     } 
                 }
             }
