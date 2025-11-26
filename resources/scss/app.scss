@@ -122,8 +122,10 @@ body.index {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 800px;
+            width: 100%;
+            max-width: 800px;
             gap: 2em;
+            padding: 0 1em;
             
             .books__header {
                 display: flex;
@@ -198,6 +200,7 @@ body.index {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        justify-content: top;
                         gap: .3em;
                         width: 100%;
                         padding: 0 0 .5em;
@@ -209,6 +212,7 @@ body.index {
                         
                         .item__date {
                             font-size: .8em;
+                            text-align: center;
                             border-radius: 500px;
                             color: #00000088;
                         }
@@ -808,9 +812,24 @@ body.page {
         }
         
         .books {
+            
+            .books__header {
+                font-size: .7em;
+            }
+            
             .books__list {
-                display: flex !important;
-                flex-direction: column;
+                // display: flex !important;
+                // flex-direction: column;
+                grid-template-columns: repeat(2, 1fr) !important;
+                row-gap: 0 !important;
+                
+                .item {
+                    font-size: .8em !important;
+                    
+                    .item__book {
+                        font-size: .65em !important;
+                    } 
+                }
             }
         }
     }
