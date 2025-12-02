@@ -34,6 +34,15 @@ class Auth extends Component
         $this->addError('email', 'Email atau password salah.');
     }
 
+    public function logout()
+    {
+        AuthModels::logout();                     // putuskan sesi
+        session()->invalidate();            // hapus sesi lama
+        session()->regenerateToken();       // regenerasi token CSRF
+
+        return redirect()->route('index');
+    }
+    
     public function render()
     {
         return view('livewire.auth');
