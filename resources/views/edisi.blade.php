@@ -34,7 +34,7 @@
                         <span class="item__view">&#x279C;</span>
                     </a>
                 @endforeach
-                @livewire('page.create', compact('edisi'))
+                {{-- @livewire('page.create', compact('edisi')) --}}
             </div>
         </div>
         

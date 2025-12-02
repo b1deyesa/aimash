@@ -33,7 +33,7 @@
                 <h2 class="header__title">Renungan Harian</h2>
             </div>
             <div class="books__list">
-                @livewire('edisi.create')
+                {{-- @livewire('edisi.create') --}}
                 @foreach ($edisis as $edisi)    
                     <a class="item" href="{{ route('edisi', compact('edisi')) }}">
                         <div class="item__book">
