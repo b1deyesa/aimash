@@ -1,6 +1,8 @@
 <div @if($class) class="{{ $class }}" @endif x-data="{ open: false }">
     @if ($trigger)
-        {{ $trigger  }}
+        <span x-on:click="open = true">        
+            {{ $trigger  }}
+        </span>
     @else
         <button x-on:click="open = true">{{ $label }}</button>
     @endif

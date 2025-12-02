@@ -4,10 +4,7 @@
     <section class="jumbotron">
         <img src="{{ asset('assets/img/child-pray.jpeg') }}" class="jumbotron__background">
         <div class="jumbotron__container">
-            <div class="jumbotron__author">
-                <img class="author__logo" src="{{ asset('assets/img/logo.png') }}">
-                {{-- <h3 class="author__name">by Cyecilia Pical</h3> --}}
-            </div>
+            @livewire('auth')
             <h1 class="jumbotron__title">Aku Ingin Membaca Alkitab Setiap Hari</h1>
             <h2 class="jumbotron__subtitle">Renungan Harian Kristen Anak Usia 6-11 Tahun</h2>
             <p class="jumbotron__quote">“Firman-Mu itu pelita bagi kakiku dan terang bagi jalanku”<br>Mazmur 119:105</p>
@@ -33,7 +30,9 @@
                 <h2 class="header__title">Renungan Harian</h2>
             </div>
             <div class="books__list">
-                {{-- @livewire('edisi.create') --}}
+                @auth
+                    @livewire('edisi.create')
+                @endauth
                 @foreach ($edisis as $edisi)    
                     <a class="item" href="{{ route('edisi', compact('edisi')) }}">
                         <div class="item__book">

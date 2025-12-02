@@ -13,11 +13,13 @@ class Modal extends Component
      */
     public function __construct(
         public $class = null,
-        public $trigger = null
+        public $trigger = null,
+        public $label = 'Button'
     )
     {
         $this->class = $class;
         $this->trigger = $trigger;
+        $this->label = $label;
     }
 
     /**

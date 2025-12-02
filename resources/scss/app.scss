@@ -529,7 +529,7 @@ body.page {
     height: 70%;
     width: 80%;
     
-    span {
+    .icon {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -613,7 +613,7 @@ body.page {
     width: 100%;
     margin: 2em 0 0;
     
-    span {
+    .icon {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -743,6 +743,11 @@ body.page {
 .error {
     font-size: .8em;
     color: red;
+}
+.buttons {
+    display: flex;
+    gap: .5em;
+    margin-top: 1em;
 }
 .button {
     display: flex;

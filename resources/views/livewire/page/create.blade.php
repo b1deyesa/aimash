@@ -1,6 +1,6 @@
 <x-modal class="page__create">
     <x-slot:trigger>
-        <span x-on:click="open = true">&#8853;</span>
+        <span class="icon" x-on:click="open = true">&#8853;</span>
     </x-slot:trigger>
 
     <form wire:submit="save">
@@ -24,7 +24,7 @@
                 @enderror
             </div>
             <div class="input">
-                <label>Judul Renungan</label>
+                <label>Tanggal Renungan</label>
                 <input type="date" name="date" wire:model="date">
                 @error('date')
                     <p class="error">{{ $message }}</p>

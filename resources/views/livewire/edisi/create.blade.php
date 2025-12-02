@@ -1,6 +1,6 @@
 <x-modal class="edisi__create">
     <x-slot:trigger>
-        <span x-on:click="open = true">&#8853;</span>
+        <span class="icon" x-on:click="open = true">&#8853;</span>
     </x-slot:trigger>
 
     <form wire:submit="save">
