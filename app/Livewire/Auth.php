@@ -14,7 +14,7 @@ class Auth extends Component
     public function auth()
     {
         // validasi kode
-        if ($this->code !== '431905') {
+        if ($this->code !== 'aimash-cyeciliap#') {
             $this->addError('code', 'Kode salah!');
             return;
         }
